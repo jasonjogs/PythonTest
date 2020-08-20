@@ -9,9 +9,9 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result, 6)
         
     def test_list_fraction(self):
-        data = [Fraction(1, 4), Fraction(1, 4), Fraction(2, 5)]
+        data = [Fraction(1, 5), Fraction(2, 5), Fraction(2, 5)]
         result = sum(data)
-        self.assertEqual(result, 0.9)
+        self.assertEqual(result, 1)
     
     def test_bad_type(self):
         data = 1
