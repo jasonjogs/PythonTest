@@ -9,7 +9,7 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result, 6)
         
     def test_list_fraction(self):
-        data = [1/4, 1/4, 2/5]
+        data = [Fraction(1, 4), Fraction(1, 4), Fraction(2, 5)]
         result = sum(data)
         self.assertEqual(result, 1)
     
